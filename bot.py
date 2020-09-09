@@ -5,11 +5,11 @@ import time
 from slackclient import SlackClient
 from telegram.bot import Bot
 
-SLACK_TOKEN = os.environ['SLACK_TOKEN']
+SLACK_TOKEN = os.environ['INNODATA_SLACK_TOKEN']
 sc = SlackClient(SLACK_TOKEN)
 
-TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
-TELEGRAM_TARGET = os.environ['TELEGRAM_TARGET']
+TELEGRAM_TOKEN = os.environ['INNODATA_TELEGRAM_TOKEN']
+TELEGRAM_TARGET = os.environ['INNODATA_TELEGRAM_TARGET']
 telegram_bot = Bot(TELEGRAM_TOKEN)
 
 if sc.rtm_connect():
